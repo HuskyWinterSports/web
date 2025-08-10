@@ -1,15 +1,16 @@
 {
-  "homepage": "https://huskywintersports.github.io/web",
   "name": "hws-website",
+  "homepage":"https://huskywintersports.github.io/web/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^19.1.0",
